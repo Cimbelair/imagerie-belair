@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Centre d’Imagerie Bel Air – Oran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<a href="https://wa.me/213555142200"
+   class="rdv-btn"
+   target="_blank">
+   📅 Prendre RDV
+</a>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#333;
+}
+
+header{
+  background:linear-gradient(90deg,#0b6fa4,#0e8ccf);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+
+nav{
+  background:#084d73;
+  padding:12px;
+  text-align:center;
+}
+
+nav a{
+  color:#fff;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{
+  padding:50px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  color:#0b6fa4;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+h2::after{
+  content:"";
+  width:60px;
+  height:4px;
+  background:#0b6fa4;
+  display:block;
+  margin-top:10px;
+  border-radius:4px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.card{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  text-align:center;
+  font-size:18px;
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+footer{
+  background:#084d73;
+  color:#fff;
+  text-align:center;
+  padding:25px;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:#fff;
+  padding:16px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.lang{
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:999;
+}
+
+.ar{
+  display:none;
+  direction:rtl;
+  text-align:right;
+}
+.rdv-btn{
+  position:fixed;
+  bottom:95px;
+  right:25px;
+  background:linear-gradient(90deg,#0b6fa4,#0e8ccf);
+  color:#fff;
+  padding:14px 22px;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  z-index:999;
+}
+
+.rdv-btn:hover{
+  opacity:0.9;
+}
+/* OPTIMISATION MOBILE */
+@media (max-width: 768px){
+
+  body{
+    font-size:16px;
+  }
+
+  h1{
+    font-size:26px;
+    line-height:1.3;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  h3{
+    font-size:19px;
+  }
+
+  section{
+    padding:30px 15px;
+  }
+
+  .grid{
+    gap:25px;
+  }
+
+  img{
+    border-radius:12px;
+  }
+
+  /* Bouton RDV plus confortable */
+  .rdv-btn{
+    padding:18px 28px;
+    font-size:16px;
+    bottom:100px;
+  }
+
+}
+
+</style>
+
+<script>
+function switchLang(lang){
+  document.querySelectorAll('.fr').forEach(e=>e.style.display = (lang==='fr')?'block':'none');
+  document.querySelectorAll('.ar').forEach(e=>e.style.display = (lang==='ar')?'block':'none');
+}
+</script>
+</head>
+
+<body>
+
+<div class="lang">
+  <button onclick="switchLang('fr')">FR</button>
+  <button onclick="switchLang('ar')">AR</button>
+</div>
+
+<a class="whatsapp" href="https://wa.me/213555142200" target="_blank">📅</a>
+
+<header>
+<h1>Centre d’Imagerie Médicale Bel Air</h1>
+<p>Dr S.R SEKKAL  – Oran</p>
+</header>
+
+<nav>
+<a href="#about">Centre</a>
+<a href="#services">Examens</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<div class="fr">
+<h2>À propos</h2>
+<section id="about">
+
+<div class="fr">
+
+<h2>Centre d’Imagerie Bel Air</h2>
+
+<p>
+Le Centre d’Imagerie Bel Air à Oran est un centre médical spécialisé
+dans l’imagerie diagnostique et interventionnelle.
+Il propose une large gamme d’examens réalisés avec des équipements
+de dernière génération, assurant une qualité d’image optimale
+et une grande fiabilité diagnostique.
+</p>
+
+<p>
+Le centre prend en charge les patients dans un environnement moderne,
+sécurisé et confortable, avec une attention particulière portée
+à la qualité des soins, au respect des délais et au bien-être du patient.
+</p>
+
+<h3>Notre plateau technique</h3>
+<ul>
+  <li>IRM Siemens MAGNETOM Flow Ace – 1.5 Tesla</li>
+  <li>Scanner Canon Aquilion PRIME – 160 coupes</li>
+  <li>Cone Beam Alpha Rayscan</li>
+  <li>Radiologie numérique Samsung GU60</li>
+  <li>Échographie & Doppler Canon Aplio 500</li>
+  <li>Ostéodensitométrie PRIMUS – OsteoSys</li>
+  <li>Mammographie Sophie – capteur plan Planmed</li>
+  <li>Panoramique dentaire Rayscan</li>
+</ul>
+
+<h3>Radiologie interventionnelle</h3>
+<p>
+Le Centre d’Imagerie Bel Air réalise également des actes de
+<strong>radiologie interventionnelle</strong>, notamment :
+</p>
+<ul>
+  <li>Biopsies sous échographie</li>
+  <li>Biopsies sous scanner</li>
+  <li>Drainage d'abcés</li>
+   <li>infiltrations ostéo articulaire</li>
+</ul>
+
+<p>
+Ces actes sont effectués sous guidage précis, dans des conditions
+de sécurité optimales et selon les recommandations médicales en vigueur.
+</p>
+
+<h3>Qualité et prise en charge</h3>
+<p>
+Notre équipe médicale et paramédicale veille à assurer une prise en charge
+rapide et personnalisée, avec des examens réalisés selon des standards
+élevés de qualité, de sécurité et de confidentialité.
+</p>
+
+</div>
+
+<div class="ar">
+
+<h2>مركز بل إير للتصوير الطبي</h2>
+
+<p>
+يُعد مركز بل إير للتصوير الطبي بوهران مركزًا متخصصًا في التصوير الطبي
+التشخيصي والتداخلي، ويقدم مجموعة واسعة من الفحوصات باستعمال أجهزة
+حديثة تضمن جودة عالية ودقة تشخيصية كبيرة.
+</p>
+
+<p>
+يوفر المركز بيئة حديثة وآمنة ومريحة للمرضى، مع الحرص على جودة الرعاية
+وسرعة التكفل واحترام المعايير الطبية المعتمدة.
+</p>
+
+<h3>المنصة التقنية</h3>
+<ul>
+  <li>IRM Siemens MAGNETOM Flow Ace – 1.5 تسلا</li>
+  <li>Scanner Canon Aquilion PRIME – 160 شريحة</li>
+  <li>Cone Beam Alpha Rayscan</li>
+  <li>الأشعة الرقمية Samsung GU60</li>
+  <li>الإيكوغرافي والدوبلر Canon Aplio 500</li>
+  <li>قياس كثافة العظام PRIMUS – OsteoSys</li>
+  <li>تصوير الثدي Sophie – Planmed</li>
+  <li>الأشعة البانورامية للأسنان Rayscan</li>
+</ul>
+
+<h3>الأشعة التداخلية</h3>
+<p>
+يقوم مركز بل إير للتصوير الطبي بإجراء فحوصات الأشعة التداخلية، خاصة:
+</p>
+<ul>
+  <li>الخزعات الموجهة بالإيكوغرافي</li>
+  <li>الخزعات الموجهة بالسكانير</li>
+</ul>
+
+<p>
+تُجرى هذه الإجراءات بدقة عالية وتحت شروط سلامة صارمة ووفق المعايير الطبية.
+</p>
+
+<h3>الجودة والتكفل بالمرضى</h3>
+<p>
+يحرص الطاقم الطبي وشبه الطبي على توفير تكفل سريع وشخصي، مع احترام
+معايير الجودة والسلامة والسرية الطبية.
+</p>
+
+</div>
+
+</section>
+</div>
+
+<div class="ar">
+<h2>نبذة عن المركز</h2>
+<p>
+يوفر مركز بل إير للتصوير الطبي بوهران فحوصات دقيقة باستعمال أجهزة حديثة
+وتحت إشراف أطباء مختصين.
+</p>
+</div>
+</section>
+
+<section id="services">
+<h2>Nos examens</h2>
+
+<div class="services">
+
+<a href="irm.html" class="card link" style="text-decoration:none;">
+  IRM
+</a>
+
+<a href="scanner.html" class="card link" style="text-decoration:none;">
+  Scanner (CT)
+</a>
+
+
+<a href="radiologie-numerique.html" class="card link" style="text-decoration:none;">
+  Radiologie numérique
+</a>
+
+<a href="echographie.html" class="card link" style="text-decoration:none;">
+  Échographie
+</a>
+<a href="doppler.html" class="card link" style="text-decoration:none;">
+  Doppler
+</a>
+
+<a href="fibroscan.html" class="card link" style="text-decoration:none;">
+  Fibroscan
+</a>
+
+<a href="osteodensitometrie.html" class="card link" style="text-decoration:none;">
+  Ostéodensitométrie
+</a>
+
+<a href="mammographie.html" class="card link" style="text-decoration:none;">
+  Mammographie
+</a>
+
+
+<a href="cone-beam.html" class="card link" style="text-decoration:none;">
+  Cône Beam (CBCT)
+</a>
+
+<a href="panoramique-dentaire.html" class="card link" style="text-decoration:none;">
+  Panoramique dentaire
+</a>
+<a href="biopsie-echo-guidee.html" class="card link" style="text-decoration:none;">
+  Biopsie écho-guidée
+</a>
+<a href="biopsie-scanner-guidee.html" class="card link" style="text-decoration:none;">
+  Biopsie scanno-guidée
+</a>
+
+</div>
+</section>
+
+<section id="map">
+<div class="fr">
+<h2>📍 Où nous trouver</h2>
+<iframe
+src="https://www.google.com/maps?q=Centre+d’Imagerie+Bel+Air+Oran&output=embed"
+width="100%" height="350"
+style="border:0;border-radius:12px;" loading="lazy"></iframe>
+</div>
+
+<div class="ar">
+<h2>📍 موقعنا</h2>
+<iframe
+src="https://www.google.com/maps?q=Centre+d’Imagerie+Bel+Air+Oran&output=embed"
+width="100%" height="350"
+style="border:0;border-radius:12px;" loading="lazy"></iframe>
+</div>
+</section>
+
+<section id="contact">
+<div class="fr">
+<h2>Contact</h2>
+<p><strong>📍 Adresse :</strong> Bel Air – Oran</p>
+<p><strong>📞 Téléphone :</strong> 041 84 37 21 / 24</p>
+<p><strong>📧 Email :</strong> cim.belair@gmail.com</p>
+<p><strong>📱 WhatsApp RDV :</strong> +213 555 14 22 00</p>
+<p><strong>⏰ Horaires :</strong> Samedi – Jeudi | 08h00 – 17h00</p>
+</div>
+
+<div class="ar">
+<h2>الاتصال</h2>
+<p><strong>📍 العنوان :</strong> بل إير – وهران</p>
+<p><strong>📧 البريد الإلكتروني :</strong> cim.belair@gmail.com/p>
+<p><strong>📞 الهاتف :</strong> 041 84 37 21 / 24</p>
+<p><strong>📱 واتساب :</strong> 0555 14 22 00</p>
+<p><strong>⏰ التوقيت :</strong> السبت – الخميس | 08:00 – 17:00</p>
+</div>
+</section>
+
+<footer>
+© 2026 Centre d’Imagerie Bel Air – Oran
+</footer>
+
+</body>
+</html>

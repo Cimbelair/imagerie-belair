@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>IRM – Centre d’Imagerie Bel Air – Oran</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f7fb;
+  color:#333;
+}
+
+header{
+  background:linear-gradient(90deg,#0b6fa4,#0e8ccf);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h2{
+  color:#0b6fa4;
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+img{
+  width:100%;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+ul{
+  line-height:1.8;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  background:#0b6fa4;
+  color:#fff;
+  padding:14px 24px;
+  border-radius:8px;
+  text-decoration:none;
+}
+
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+/* OPTIMISATION MOBILE */
+@media (max-width: 768px){
+
+  body{
+    font-size:16px;
+  }
+
+  h1{
+    font-size:26px;
+    line-height:1.3;
+  }
+
+  h2{
+    font-size:22px;
+  }
+
+  h3{
+    font-size:19px;
+  }
+
+  section{
+    padding:30px 15px;
+  }
+
+  .grid{
+    gap:25px;
+  }
+
+  img{
+    border-radius:12px;
+  }
+
+  /* Bouton RDV plus confortable */
+  .rdv-btn{
+    padding:18px 28px;
+    font-size:16px;
+    bottom:100px;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>IRM (Imagerie par Résonance Magnétique)</h1>
+<p>Centre d’Imagerie Bel Air – Oran</p>
+</header>
+
+<section>
+
+<div class="grid">
+
+<!-- TEXTE -->
+<div>
+
+<h2>Équipement IRM</h2>
+<p>
+<strong>IRM Siemens MAGNETOM Flow Ace – 1.5 Tesla</strong><br>
+Équipement reconnu pour la qualité d’image, le confort patient
+et la fiabilité diagnostique.
+</p>
+
+<h2>Qu’est-ce que l’IRM ?</h2>
+<p>
+L’IRM est un examen d’imagerie médicale non irradiant utilisant
+un champ magnétique et des ondes radio pour explorer les organes,
+les tissus et le système nerveux avec une grande précision.
+</p>
+
+<h2>Examens IRM réalisés</h2>
+<ul>
+  <li>IRM cérébrale</li>
+  <li>IRM médullaire</li>
+  <li>IRM rachis (cervical, dorsal, lombaire)</li>
+  <li>IRM ostéo-articulaire</li>
+  <li>IRM abdominale et pelvienne</li>
+  <li>IRM des parties molles</li>
+</ul>
+
+<a class="btn" href="index.html">⬅ Retour aux examens</a>
+
+</div>
+
+<!-- IMAGE -->
+<div>
+<img src="C:\Users\drsek\OneDrive\Desktop\SITE\siemens-healthineers_MR_MAGNETOM-Flow_Platform_60.webp"
+     alt="IRM Siemens MAGNETOM Flow Ace"
+     style="width:100%;border-radius:16px;">
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
